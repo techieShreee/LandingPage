@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                    <div class="small-images">
+                        <img src="product_img/6_1.jpg" onclick="clickimg(this)">
+                        <img src="product_img/6_2.jpg" onclick="clickimg(this)">
+                        <img src="product_img/6_3.jpg" onclick="clickimg(this)">
+                        <img src="" onclick="clickimg(this)">
+                    </div>
+                    <div class="main-images">
+                        <img src="product_img/6_1.jpg" id="imagebox">
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand : GEELEXO  </p>
+                    <h2>sports shoes for men Lace up lightweight shoes for running, walking, gym, trekking, hiking & party Running Shoes For Men</h2>
+                    <div class="review">
+                        <span>(4.0)</span>
+                        <span class="bx bxs-star icon"></span>
+                    </div>
+                    <div class="price-box">
+                        <p class="price">&#8377; 1599</p>
+                        <strike>&#8377; 2100</strike>
+                    </div>
+                    <p>Size: <select name="size">
+                            <option value="select colour">Select Colour</option>
+                            <option value="black">Black</option>
+                            <option value="black">White</option>
+                            <option value="black">Red</option>
+                        </select></p>
+                    <p>Quantity <input type="text" value="1"></p>
+                    <button>
+                        <span class="fa fa-shopping-cart"></span>
+                        Add to Cart
+                    </button>
+                    <button class="buy">
+                        <span class="fa fa-shopping-cart"></span>
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function clickimg(smallImg) {
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src
+        }
+    </script>
+</body>
+
+</html>5

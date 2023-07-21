@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+    <title>Login</title>
+</head>
+
+<body>
+    <section>
+        <div class="container pt-5 mt-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 m-auto">
+                    <div class="card border-0 shadow">
+                        <div class="text-black-50 p-4 ">
+                            <center>
+                                <p class="h3"><u>Login For Uninterrupt Shopping</u></p>
+                                <img src="logo_modified.png" width="100" height="100">
+                                <p class="h3">Shoe-<i>a</i>-holic</u>
+                            </center> 
+                        </div>
+                        <div class="card-body">
+                        
+                            <form action="">
+                                <input type="text" name="" id="" class="form-control my-4 py-2"
+                                    placeholder="Username" />
+                                <input type="email" name="" id="email" class="form-control my-4 py-2"
+                                    placeholder="Email" />
+                                <input type="password" name="" id="pass" class="form-control my-4 py-2"
+                                    placeholder="Password" />
+                                <div class="text-center mt-3">
+                                    <button class="btn btn-primary" onclick="fn1()">Login</button>
+                                    <b><p style="color: rgba(36, 36, 133, 0.657);">Shoe-<i>a</i>-holic</p></b>
+                                    <p style="color: rgba(36, 36, 133, 0.657);">Kolkata, West Bengal, India</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+</body>
+<script>
+    function op() {
+        window.open('file:index.html')
+    }
+    function fn1() {
+        var e1 = 'abc@gmail.com';
+        var e2 = 'xyz@gmail.com';
+        var p1 = '123456';
+        var p2 = '654321';
+        var em = document.getElementById("email").value;
+        var ps = document.getElementById("pass").value;
+        if (e1 == em) {
+            if (p1 == ps) {
+                op();
+            } else {
+                alert("Something Wrong!!!\nTry again");
+            }
+        } else if (e2 == em) {
+            if (p2 == ps) {
+                op();
+            }
+        } else {
+            alert("Something Wrong!!!\nTry again");
+        }
+    }
+</script>
+
+</html>

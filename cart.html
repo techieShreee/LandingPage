@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Your Cart Page</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+
+                </span>
+
+                <div class="text logo-text">
+                    <img src="logo_modified.png" width="120" height="100">
+                    <span class="name">Shoe-<i>a</i>-holic</span>
+                    <span class="profession"></span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" id="sesrch-item" placeholder="Search..." onkeyup="search()">
+                </li>
+
+                <ul class="menu-links">
+
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link" id="nav-link">
+                        <a href="boy.html">
+                            <i class='bx bx-male-sign icon'></i>
+                            <span class="text nav-text">Male</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="nav-link">
+                        <a href="girl.html">
+                            <i class='bx bx-female-sign icon'></i>
+                            <span class="text nav-text">Female</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="contact.html">
+                            <i class='bx bxs-contact icon'></i>
+                            <span class="text nav-text">Contact us</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!---Cart items--->
+    <div class="cartpage">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quanity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="product_html/product_img/1_1.jpg" width="10%" height="10%">
+                        <div>
+                            <p>Black and White sneakers</p>
+                            <small>Price: ₹5000</small>
+                            <br>
+                            <a href="product_html/product.html">View Item</a>
+                            <br>
+                            <a href="#"><b>Remove</b></a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹5000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="product_html/product_img/2_1.jpg" width="10%" height="10%">
+                        <div>
+                            <p>Labbin Casual Sneakers Shoes Lightweight for Men</p>
+                            <small>Price: ₹3999</small>
+                            <br>
+                            <a href="product_html/product2.html">View Item</a>
+                            <br>
+                            <a href="#"><b>Remove</b></a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹3999</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="product_html/product_img/3_1.jpg" width="10%" height="10%">
+                        <div>
+                            <p>Nike Men's 2020 Air Max 1 G Golf Shoes</p>
+                            <small>Price: ₹2000</small>
+                            <br>
+                            <a href="product_html/product3.html">View Item</a>
+                            <br>
+                            <a href="#"><b>Remove</b></a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹2000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="product_html/product_img/5_1.jpg" width="10%" height="10%">
+                        <div>
+                            <p>sports shoes for men</p>
+                            <small>Price: ₹1599</small>
+                            <br>
+                            <a href="product_html/product6.html">View Item</a>
+                            <br>
+                            <a href="#"><b>Remove</b></a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹1599</td>
+            </tr>
+            </table>
+        <div class="total">
+            <table>
+                <tr>
+                    <td><b>Price Details</b></td>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>₹12,598</td>
+                </tr>
+                <tr>
+                    <td>Delivery Charge</td>
+                    <td>₹60</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>₹12,658</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+   
+<!---Footer--->
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="logo_modified.png" width="100" height="100">
+            <span class="ml-3 text-xl">Shoe-<i>a</i>-holic</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" style="color:black;">
+            Thank You For Visiting US!
+            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                target="_blank"></a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none"
+                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                    </path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+            </a>
+        </span>
+    </div>
+</footer>
+
+    </section>
+    
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Shoe-a-holic</title>
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    
+                </span>
+
+                <div class="text logo-text">
+                    <img src="logo_modified.png" width="120" height="100">
+                    <span class="name">Shoe-<i>a</i>-holic</span>
+                    <span class="profession"></span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" id="sesrch-item" placeholder="Search..." onkeyup="search()">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link" id="nav-link">
+                        <a href="boy.html">
+                            <i class='bx bx-male-sign icon'></i>
+                            <span class="text nav-text">Male</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="nav-link">
+                        <a href="girl.html">
+                            <i class='bx bx-female-sign icon'></i>
+                            <span class="text nav-text">Female</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="cart.html">
+                            <i class='bx bx-cart icon'></i>
+                            <span class="text nav-text">Cart</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="contact.html">
+                            <i class='bx bxs-contact icon'></i>
+                            <span class="text nav-text">Contact us</span>
+                        </a>
+                    </li>
+                   
+                
+                </ul>
+            </div>
+            
+        </div>
+
+    </nav>
+    <section class="home">
+        <div class="text">Shoe-<i>a</i>-holic</div>
+        <div class="content">
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+                        <img alt="feature" class="object-cover object-center h-full w-full" src="home_img/nikebanner.jpg">
+                    </div>
+                    <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+                        
+                        <div class="flex flex-col mb-10 lg:items-start items-center">
+
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="font-size: 70px; padding-top:50px;;"><b><i>Special<br>Offer!</i></b></h2>
+                                <p class="leading-relaxed text-base" style="font-size:30px;"> Step into the future with the new collection of
+                                    versatile Jordan looks designed with the planet in mind....<br><br><b>Discount Upto 30% OFF</b></p>
+                                <a class="mt-3 text-indigo-500 inline-flex items-center" href="special_offer.html"><br><b>SHOP NOW</b>
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2"
+                                        viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                    <div class="lg:w-2/3 mx-auto">
+                        <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+                            <img alt="gallery"
+                                class="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
+                                src="home_img/6shoe.jpg">
+                            <div class="text-center relative z-10 w-full">
+                                <h2 class="text-2xl text-gray-900 font-medium title-font mb-2">Women's Special</h2>
+                                <p class="leading-relaxed">Sneakers + boots + Sports.</p>
+                                <a class="mt-3 text-indigo-500 inline-flex items-center" href="girl.html">Explore Now
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2"
+                                        viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap -mx-2">
+                            <div class="px-2 w-1/2">
+                                <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+                                    <img alt="gallery"
+                                        class="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
+                                        src="home_img/5shoe.jpg">
+                                    <div class="text-center relative z-10 w-full">
+                                        <h2 class="text-xl text-gray-900 font-medium title-font mb-2"></h2>
+                                        <p class="leading-relaxed">Grab Yours Now</p>
+                                        <a class="mt-3 text-indigo-500 inline-flex items-center" href="special_offer.html"> More
+                                            <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2"
+                                                viewBox="0 0 24 24">
+                                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-2 w-1/2">
+                                <div class="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
+                                    <img alt="gallery"
+                                        class="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
+                                        src="home_img/4shoe.jpg">
+                                    <div class="text-center relative z-10 w-full">
+                                        <h2 class="text-xl text-gray-900 font-medium title-font mb-2"></h2>
+                                        <p class="leading-relaxed">Apply code ang get upto 50% discount</p>
+                                        <a class="mt-3 text-indigo-500 inline-flex items-center" href="apply_code.html"> More
+                                            <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2"
+                                                viewBox="0 0 24 24">
+                                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Latest Products-->
+
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-wrap -m-4">
+                        <div class="p-4 md:w-1/3">
+                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="product_html/product2_img/5_1.jpg"
+                                    alt="blog">
+                                <div class="p-6">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+                                        Sneakers</h2>
+                                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3"></h1>
+                                    <p class="leading-relaxed mb-3">Nike's New LunarCharge Combines you four iconic Nike
+                                        Sneakers into One!</p>
+                                    <div class="flex items-center flex-wrap ">
+                                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="product_html/productg5.html"> More
+                                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                                stroke-width="2" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path d="M5 12h14"></path>
+                                                <path d="M12 5l7 7-7 7"></path>
+                                            </svg>
+                                        </a>
+                                        <span
+                                            class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>1.2K
+                                        </span>
+                                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                                </path>
+                                            </svg>6
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/3">
+                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="home_img/2shoes.jpg"
+                                    alt="blog">
+                                <div class="p-6">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Sports
+                                    </h2>
+                                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3"></h1>
+                                    <p class="leading-relaxed mb-3">Nike changes Football boots Forever with New Magista
+                                    </p>
+                                    <div class="flex items-center flex-wrap">
+                                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="product_html/product8.html" target="_blank"> More
+                                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                                stroke-width="2" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path d="M5 12h14"></path>
+                                                <path d="M12 5l7 7-7 7"></path>
+                                            </svg>
+                                        </a>
+                                        <span
+                                            class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>1.2K
+                                        </span>
+                                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                                </path>
+                                            </svg>6
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 md:w-1/3">
+                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                                <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="home_img/1shoe.jpeg"
+                                    alt="blog">
+                                <div class="p-6">
+                                    <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Boots
+                                    </h2>
+                                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3"></h1>
+                                    <p class="leading-relaxed mb-3">Latest Nike WMNS Air Max 270 Black/White/Light
+                                        Purple-Orange shoes.</p>
+                                    <div class="flex items-center flex-wrap ">
+                                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="product_html/product.html"> More
+                                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                                stroke-width="2" fill="none" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path d="M5 12h14"></path>
+                                                <path d="M12 5l7 7-7 7"></path>
+                                            </svg>
+                                        </a>
+                                        <span
+                                            class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>1.2K
+                                        </span>
+                                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                                </path>
+                                            </svg>6
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--REVIEWS-->
+
+            <section class="text-gray-600 body-font">
+                <h2><b>Customer Reviews</b></h2>
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-wrap -m-4">
+                        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                            <div class="h-full text-center">
+                                <img alt="testimonial"
+                                    class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                    src="home_img/1stmodel.jpg">
+                                <p class="leading-relaxed">The products are extremely comfortable and easy on the feet
+                                    plus while walking rarely do we feel any lack in fitting. A must buy product for
+                                    people who enjoy walking and running.</p>
+                                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD
+                                </h2>
+
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                            <div class="h-full text-center">
+                                <img alt="testimonial"
+                                    class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                    src="home_img/2ndmodel.png">
+                                <p class="leading-relaxed">I'm a dancer, and this has perfect grip, feels light on feet.
+                                    This is my go-to shoe from my wide collection of shoes. Usable for rough usage as
+                                    well.</p>
+                                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">ALPER KAMU</h2>
+
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 lg:mb-0 p-4">
+                            <div class="h-full text-center">
+                                <img alt="testimonial"
+                                    class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                    src="home_img/3rdmodel.jpg">
+                                <p class="leading-relaxed">It’s good , feels comfortable and it’s light weight though !!
+                                    Fits as expected got on 12-5-22 d grips Good and feels very comfortable the colour
+                                    also same as shown n pic , I ordered blue … I m Happy with this product should see
+                                    hw many days it will last.</p>
+                                <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                                <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HENRY LETHAM
+                                </h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--Footer-->
+
+        <footer class="text-gray-600 body-font">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <img src="logo_modified.png" width="100" height="100">
+                    <span class="ml-3 text-xl">Shoe-<i>a</i>-holic</span>
+                </a>
+                <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" style="color:black;">
+                    Thank You For Visiting US!
+                    <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                        target="_blank"></a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </footer>
+
+        <!--js-->
+
+        <script>
+            const body = document.querySelector('body'),
+                sidebar = body.querySelector('nav'),
+                toggle = body.querySelector(".toggle"),
+                searchBtn = body.querySelector(".search-box"),
+                modeSwitch = body.querySelector(".toggle-switch"),
+                modeText = body.querySelector(".mode-text");
+
+            const search = () => {
+                const searchbox = document.getElementById("sesrch-item").value.toUpperCase();
+                const storeitems = document.getElementById("nav-link");
+                const product = document.querySelectorAll("nav-link");
+                const pname = document.getElementsByTagName("span");
+
+                for (var i = 0; i < pname.length; i++) {
+                    let match = product[i].getElementsByTagName('span')[0];
+
+                    if (match) {
+                        let textvalue = match.textContent || match.innerHTML
+
+                        if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+                            product[i].style.display = "";
+                        } else {
+                            product[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+
+            toggle.addEventListener("click", () => {
+                sidebar.classList.toggle("close");
+            })
+
+            searchBtn.addEventListener("click", () => {
+                sidebar.classList.remove("close");
+            })
+        </script>
+
+</body>
+
+</html>
